@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart Virtual Shopping Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Walmart Virtual Shopping Assistant</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#search">Product Search</a></li>
+                    <li><a href="#tryon">Virtual Try-On</a></li>
+                    <li><a href="#map">Store Map</a></li>
+                    <li><a href="#checkout">Checkout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Walmart's Virtual Shopping Experience</h2>
+            <p>Experience the best of online and in-store shopping seamlessly.</p>
+            <a href="#search" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <section id="search" class="section">
+        <div class="container">
+            <h2>Product Search</h2>
+            <input type="text" id="search" placeholder="Search for products...">
+            <button onclick="searchProducts()">Search</button>
+            <div id="results"></div>
+        </div>
+    </section>
+
+    <section id="tryon" class="section">
+        <div class="container">
+            <h2>Virtual Try-On</h2>
+            <p>Upload a photo or use your webcam to see how products look on you.</p>
+            <input type="file" id="upload" accept="image/*">
+            <button onclick="startTryOn()">Try On</button>
+            <div id="virtualTryOn"></div>
+        </div>
+    </section>
+
+    <section id="map" class="section">
+        <div class="container">
+            <h2>Store Map</h2>
+            <div id="mapContainer">
+                <p>Interactive store map coming soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="checkout" class="section">
+        <div class="container">
+            <h2>Checkout</h2>
+            <p>Your cart details will appear here.</p>
+            <button onclick="completePurchase()">Complete Purchase</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Walmart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
